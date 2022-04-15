@@ -7,6 +7,7 @@ public class p03_정수형연산_버림_나머지연산자 {
 		System.out.printf("#3-1 : %d\n", k38_i);
 
 		int k38_i2 = 1000 % 3; // 나머지 연산자
+		System.out.printf("#3-2 : %d\n",k38_i2);
 
 		// 나머지 연산자
 		for (int k38_i3 = 0; k38_i3 < 20; k38_i3++) {
