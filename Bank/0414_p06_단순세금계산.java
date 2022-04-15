@@ -11,9 +11,9 @@ public class p06_단순세금계산 {
 		//다르면 else 결과로 k38_ret 계산
 		// 100 + 1을 하는 이유 : 소수점 이하값을 무조건 올림하기 위함이다.
 		if (((double) k38_val * (double) k38_rate / 100.0) == k38_val * k38_rate / 100) {
-			k38_ret = k38_val * k38_rate / 100 + 1;
-		} else {
-			k38_ret = k38_val * k38_rate / 100 + 1;
+			k38_ret = k38_val * k38_rate / 100;		//여기는 그냥 / 100이다!!
+		} else {	//k38_val, k38_rate를 실수형으로 계산한 값과 정수형으로 계산한 값이 다르면 올림처리!
+			k38_ret = k38_val * k38_rate / 100 + 1;	
 		}
 		return k38_ret;		//함수 k38_taxcal은 k38_ret값을 리턴
 	}
